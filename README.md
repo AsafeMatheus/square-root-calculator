@@ -2,15 +2,16 @@
 made with react native and expo.
 
 ## Home page
-![home](assets/images/home.jpg)
-- Raiz quadrada: this is gonna calculate the square root
-- Raiz cúbica: this is gonna calculate the cube root
-- Jogar: little game to practice the square root calculation
+<img src="assets/images/home.jpg" alt="home" width="250"/>
 
----
+<ul>
+<li>Raiz quadrada: this is gonna calculate the square root</li>
+<li>Raiz cúbica: this is gonna calculate the cube root</li>
+<li>Jogar: little game to practice the square root calculation</li>
+</ul>
+
 ## Calculator
-![calculator](assets/images/square.jpg)
----
+<img src="assets/images/square.jpg" alt="home" width="250"/>
 
 ## Game
-![game](assets/images/game.jpg)
+<img src="assets/images/game.jpg" alt="home" width="250"/>
