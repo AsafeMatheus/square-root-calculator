@@ -1,21 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import HomeScreen from './screens/Home'
+import SquareRootScreen from './screens/Square'
+import CubeRootScreen from './screens/Cube'
+import GameScreen from './screens/Game'
+
+const Stack = createStackNavigator()
+
+export default function App(){
+  return(
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Square"
+          component={SquareRootScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Cube"
+          component={CubeRootScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Game"
+          component={GameScreen}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
